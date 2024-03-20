@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title> An About Us Page</title>
+ <style>
+  @import url('c:\Users\sony\Downloads\images.jpg');
+body {
+  background-image:url("https://img.freepik.com/premium-photo/education-banner-background-back-school-generate-ai_905417-6405.jpg") ;
+  background-size: cover ;
+            background-position: center;
+    font-family: Arial, sans-serif;
+    background-color: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav{
+    background-color: rgb(83, 184, 202);
+    padding: 5px;
+    font-size: 20px;
+  }
+  nav a{
+    color:whitesmoke;
+    text-decoration: none;
+    padding:10px 25px;
+    display:inline-block;
+  }
+  nav a:hover{
+    background-color: lightgray;
+    color:black;
+  }
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.about-us{
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #ddd;
+}
+.pic{
+  height: auto;
+  width:  302px;
+}
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span{
+  color: #4070f4;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover{
+  background: #000;
+  border: 1px solid #4070f4;
+}    
+ </style>
+ 
+  <link rel="stylesheet" type="text/css" href="static/aboutnew.css">
+</head>
+<body>
+  <nav>
+    <a href="/">HOME</a>
+    <a href="/course">COURSES</a>
+    <a href="/videos">VIDEOS</a>
+    <a href="/about">ABOUT</a>
+    <a href="/syllabus">SYLLABUS</a>
+    
+</nav>
+  <section class="about">
+    <div class="about">
+      
+      <div class="text">
+        <h2>About Us</h2>
+        
+        <img width="400" height="200" src="static/images.jpg" alt="course image">
+        <h5>Educational Platform on Coding</h5>
+          <p>Our educational platform provides  best coding courses with materials and also videos.Our unique visual coding method is always best adjusted to all ages and knowledge levels. 
+            Our platform makes the transition between visual coding to text-based coding easy and fun
+            All our lessons are focused on improving our students' knowledge and skills Between classes they can practice step by step from basics to high level.</p>
+        <div class="data">
+            <button type="submit">
+                <a href="/videos.html">PERVIOUS</a>
+    
+            </button>
+        
+        <button type="submit">
+            <a href="/syllabus">NEXT</a>
+
+        </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

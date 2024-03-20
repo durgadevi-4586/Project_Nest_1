@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/free-photo/elevated-view-laptop-stationeries-yellow-backdrop_23-2147880496.jpg?w=2000");
+            background-size: cover;
+            background-position: center;
+            
+            font-family: Arial, sans-serif;
+            background-color:none;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background-color: blur;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align:center;
+            
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #007BFF;
+            color: blur;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+          
+
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    
+    <div class="login-container"  onclick="redirectTonavbarr()">
+        <h2>Login to Our Platform</h2>
+        
+        <form id="loginForm" action="/navbarr" method="post"></form>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+        </form>
+        
+        <button class="btnn" onclick="handleLoginForm()"href="/navbarr">LOGIN</button>
+        
+        
+        <p>
+            Don't have an account? <a href="/signup">Sign up</a>
+        </p>
+    </div>
+
+    <script>
+        function handleLoginForm() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (!username || !password) {
+                alert('Please enter both username and password.');
+                return false;
+            }
+
+        
+            const isLoginSuccessful = true; 
+
+             
+                
+            
+                
+            
+            return false;
+        }
+    </script>
+</body>
+</html>
+
